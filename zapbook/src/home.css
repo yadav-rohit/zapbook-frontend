@@ -1,4 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 .area{
-    background-color: rgba(255, 255, 255, 0.863);
+    background-color: rgba(255, 255, 255, 0.884);
     width: 80%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.main{
+    cursor: pointer;
+    
+}
+.linkss{
+    width: 50%;
+    background-color: #6b3eda;
+    color: white;
+    box-shadow: -2px 20px 35px 4px rgba(48, 41, 54, 0.459);
+    /* good black color */
+    /* #2f2e41 */
+}
+.cldimg{
+    height: 60%;
+    width: 60%;
+}
+
+.one:hover{
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 30px 1px  rgba(0, 0, 0, 0.774);
+}
+.two:hover{
+    color: rgb(255, 174, 0);
+    box-shadow: 0px 0px 30px 1px  rgba(255, 174, 0, 0.774);
+}
+.three:hover{
+    color:#00b7ff;
+    box-shadow: 0px 0px 30px 1px #00b7ff;
 }
