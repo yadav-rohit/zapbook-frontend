@@ -5,3 +5,11 @@
 li{
     margin-left: 10px;
 }
+.active{
+    color: #6b3eda;
+    font-weight: 640;
+    text-shadow: 4px 4px 6px #22222285;
+}
+.logo{
+    text-shadow: 4px 4px 15px #22222285;
+}
