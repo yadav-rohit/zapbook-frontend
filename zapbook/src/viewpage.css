@@ -1,25 +1,27 @@
 .imp{
-    background-color: rgba(255, 255, 0, 0.52);
+    background: radial-gradient(circle, rgba(240,255,49,1) 0%, rgba(205,165,1,1) 100%);
 }
-  .imp .fa-plus, .todo .fa-plus, .list .fa-plus{
+.imp .fa-plus, .todo .fa-plus, .list .fa-plus{
       transform: rotateZ(45deg);
   }
 .imp::before{
     content: "Important";
 }
 .todo{
-    background-color: rgba(0, 195, 255, 0.52);
+    background:radial-gradient(circle, rgba(118,190,255,1) 0%, rgba(0,133,207,1) 100%);
 }
 .todo::before{
     content: "Todo";
 }
 .list{
-    background-color: rgba(115, 255, 0, 0.52);
+    background: radial-gradient(circle, rgba(105,255,49,1) 0%, rgba(2,205,1,1) 100%);;
 }
 .list::before{
     content: "List";
 }
 .title{
+    max-width: 50%;
+    overflow: hidden;
     padding: 1px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 8px;
@@ -30,20 +32,27 @@
 }
 .title_tag {
     position: relative;
-    display: inline-block;
+    display:block;
+    width:fit-content;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
   
-  .tagss {
+.tagss {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.884);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
   }
   
-  .title_tag:hover .tagss {
+.title_tag:hover .tagss {
     display: block;
   }
+.area{
+    height:fit-content;
+}
+.txtarea{
+    height:65vh;
+}
