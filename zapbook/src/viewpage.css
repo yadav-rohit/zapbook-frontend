@@ -1,20 +1,11 @@
-.imp{
-    background: radial-gradient(circle, rgba(240,255,49,1) 0%, rgba(205,165,1,1) 100%);
-}
 .imp .fa-plus, .todo .fa-plus, .list .fa-plus{
       transform: rotateZ(45deg);
   }
 .imp::before{
     content: "Important";
 }
-.todo{
-    background:radial-gradient(circle, rgba(118,190,255,1) 0%, rgba(0,133,207,1) 100%);
-}
 .todo::before{
     content: "Todo";
-}
-.list{
-    background: radial-gradient(circle, rgba(105,255,49,1) 0%, rgba(2,205,1,1) 100%);;
 }
 .list::before{
     content: "List";
@@ -23,7 +14,7 @@
     max-width: 50%;
     overflow: hidden;
     padding: 1px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     border-radius: 8px;
 }
 
@@ -54,5 +45,39 @@
     height:fit-content;
 }
 .txtarea{
-    height:65vh;
+    height:50vh;
+}
+.btn{
+    padding: 3px;
+    
+}
+.confirm{
+     border-width: 1px;
+     border-color: rgb(37, 223, 0);
+     transition: all 0.25s ease;
+     width: 100px;
+     font-weight: bold;
+}
+.confirm:hover{
+    color: white;
+    background-color: rgb(37, 223, 0);
+}
+.cancel{
+    border-width: 1px;
+     border-color: rgb(250, 60, 34);
+     width: 100px;
+     font-weight: bold;
+     transition: all 0.25s ease;
+}
+.cancel:hover{
+    color: white;
+    background-color: rgb(250, 60, 34);
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }

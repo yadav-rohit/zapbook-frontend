@@ -1,0 +1,21 @@
+.note{
+    background-color: #6b3eda;
+    padding: 10px;
+}
+.descriptions{
+    border-width: 1px;
+    border-color: black;
+    border-style:dashed;
+}
+.important{
+    background-color: rgba(31, 228, 13, 0.616);
+    box-shadow: 0px 0px 20px 1px rgba(16, 175, 2, 0.616);
+}
+.Todo{
+    background-color: rgba(228, 38, 13, 0.616);
+    box-shadow: 0px 0px 20px 1px rgba(180, 21, 0, 0.616);
+}
+.List{
+    background-color: rgba(14, 109, 218, 0.616);
+    box-shadow: 0px 0px 20px 3px rgba(0, 72, 155, 0.616);
+}
