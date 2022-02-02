@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import '../viewpage.css';
+import Confirmation from './Confirmation';
 import Listview from './Listview';
 
 
@@ -16,6 +17,7 @@ function Viewpage(props) {
     }
   }
   return (<>
+  <Confirmation/>
   <section className="main flex flex-col content-center justify-center ">
      <div className="area home_info flex-row self-center justify-center drop-shadow-xl backdrop-blur-xl rounded-lg p-5 pb-0 ">
          <div className="menubar text-xl flex  lg:flex-row">

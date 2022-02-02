@@ -4,5 +4,6 @@
 }
 body{
   background:url("./assets/images/back.svg");
+  background-blend-mode:color-burn;
   background-size: cover;
 }
