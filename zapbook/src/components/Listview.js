@@ -9,7 +9,7 @@ import noteContxt from '../context/notes/noteContxt';
 
 const Listview = (props) => {
   const context = useContext(noteContxt);
-  let {notes, setNotes} = context;
+  let {notes} = context;
     // let listednotes = notes.note;
     // const [listednotes , setNotess] = useState([]);
   
