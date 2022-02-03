@@ -1,6 +1,8 @@
 .note{
     background-color: #6b3eda;
     padding: 10px;
+    max-height: 300px;
+    overflow:auto;
 }
 .fa-trash-alt:hover{
   color:rgb(250, 60, 34);
@@ -30,8 +32,8 @@
 }
 /* !confirmation badge css */
 .cf_body{
-    position: absolute;
-    background-color: rgba(245, 245, 245, 0.548);
+    position:absolute;
+    background-color: rgba(245, 245, 245, 0.863);
     margin-right: 20px;
     border-radius: 10px;
     top: 80px;

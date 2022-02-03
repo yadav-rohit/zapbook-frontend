@@ -26,8 +26,7 @@ const Listview = (props) => {
      <div className="area drop-shadow-xl self-center backdrop-blur-xl rounded-lg p-5 my-5">
         <p className='font-bold text-2xl pb-5 pl-5'> Your Notes </p>
        <div className="lists grid grid-row lg:grid-cols-3 gap-4 ">
-         {notes.map((note)=>
-         
+         {notes.map((note)=> 
      <Note title={note.title} description={note.description} key={note.id} tag={note.tag}/>
          )}
          </div>
