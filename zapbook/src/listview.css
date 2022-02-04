@@ -1,5 +1,5 @@
 .note{
-    background-color: #6b3eda;
+    background-color: #961df8;
     padding: 10px;
     max-height: 300px;
     overflow:auto;
@@ -46,4 +46,12 @@
     border-bottom-left-radius: 10px;
     border-left-color: #e91818c9;
     border-left-width: 5px;
+}
+/* !tag css */
+.tag{
+    transform: translateY(-50%);
+    font-size: small;
+    background-color: #a180f7;
+    height: auto;
+    width: fit-content;
 }
