@@ -38,7 +38,7 @@ const NoteState = (props) => {
     // const json = response.json();
     //? logic
     const note = {
-      _id: "61ed8a368f77cf52ed7667esdawd8",
+      _id: "",
       user: "61ed7064aa84662ae5f185ww0d",
       title: title,
       description: description,
@@ -72,7 +72,7 @@ const NoteState = (props) => {
   const editnote = async (id, title, description, tag) => {
     //! api call
     const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      method: "PUT", // *GET, POST, PUT, DELETE, etc.
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
