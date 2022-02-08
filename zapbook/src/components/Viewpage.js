@@ -17,13 +17,20 @@ function Viewpage(props) {
     const description = document.querySelector(".description");
      setNote({title: title.innerHTML ,description: description.value,tag: tag.value});
   }
-  const save = () =>{
+  const save =() =>{
     // if(tag.value.length() > 20){
     //       alert("tag size can't be this big");
     // }
     // console.log(title.innerHTML , tag.innerHTML , description.value ); 
       //  console.log(note.title , note.description , note.tag);      
-      addNote(note.title , note.description , note.tag);   
+      addNote(note.title , note.description , note.tag);
+      setNote({title:"" , description: "" , tag:""});
+      const title = document.querySelector(".title");
+    const tag = document.querySelector(".title_tag");
+    const description = document.querySelector(".description");
+    title.innerHTML = "Enter The Title";
+    tag.value="";
+    description.value="";   
   }
   const cancel = async () =>{
     await setNote({title:"" , description: "" , tag:""});
