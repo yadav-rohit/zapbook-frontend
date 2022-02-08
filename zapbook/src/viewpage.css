@@ -1,6 +1,6 @@
-.important .fa-plus, .Todo .fa-plus, .List .fa-plus{
+/* .important .fa-plus, .Todo .fa-plus, .List .fa-plus{
       transform: rotateZ(45deg);
-  }
+  } */
 /* .important::before{
     content: "Important";
 }
@@ -10,6 +10,7 @@
 .List::before{
     content: "List";
 } */
+
 .title{
     max-width: 50%;
     overflow: hidden;
@@ -66,6 +67,9 @@
 .confirm:hover{
     color: white;
     background-color: rgb(37, 223, 0);
+}
+.confirm:disabled{
+    border-color: grey;
 }
 .cancel{
     border-width: 1px;

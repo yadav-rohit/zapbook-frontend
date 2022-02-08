@@ -35,17 +35,17 @@ const NoteState = (props) => {
       },
       body: JSON.stringify({title , description , tag}), // body data type must match "Content-Type" header
     });
-    // const json = response.json();
-    //? logic
-    const note = {
-      _id: "",
-      user: "61ed7064aa84662ae5f185ww0d",
-      title: title,
-      description: description,
-      tag: tag,
-      date: "2022-01-23T17:02:46.965Z",
-      __v: 0,
-    };
+    const note = await response.json();
+    // //? logic
+    // const note = {
+    //   _id: "",
+    //   user: "61ed7064aa84662ae5f185ww0d",
+    //   title: title,
+    //   description: description,
+    //   tag: tag,
+    //   date: "2022-01-23T17:02:46.965Z",
+    //   __v: 0,
+    // };
     setNotes(notes.concat(note));
   };
   //?Delete a Note
