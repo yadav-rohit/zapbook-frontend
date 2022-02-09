@@ -16,7 +16,7 @@ function Note(props) {
       setTimeout( function() {setVisibility('hidden')} , 5000);
    }
    const [cont_edititability ,setedittable] = useState("false");
-   const [note , setNote] = useState({id:"" ,title:"" , description: "" , tag:""});
+  //  const [note , setNote] = useState({id:"" ,title:"" , description: "" , tag:""});
    
   //  const onchange = () =>{
   //   const title = document.querySelector(".ttle");

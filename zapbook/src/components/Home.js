@@ -1,7 +1,7 @@
 import React  from 'react';
 import cld from '../assets/images/cloud.svg';
-import noteContext from '../context/notes/noteContxt';
-import Anime, { anime } from 'react-anime';
+// import noteContext from '../context/notes/noteContxt';
+// import Anime, { anime } from 'react-anime';
 
 export default function Home() {
   
