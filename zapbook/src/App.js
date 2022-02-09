@@ -22,7 +22,7 @@ function App() {
         <Route exact path="/Login" element={<Login/>} />
         <Route exact path="/Signup" element={<Signup/>} />
         <Route exact path="/Alert" element={<Alert/>} />
-        <Route exact path="/Alertsignup" element={<Alert content="You have Sucessfully Registered , Verify yourself by link sent on your registered email" footer="Already Verified ?" lnkname="Login Here" lnk="/Login"/>} />
+        <Route exact path="/Alertsignup" element={<Alert content="You have Sucessfully Registered , Verify yourself by link sent on your registered email" footer="Already Verified ?" lnkname="Login Here" lnk="/Login" type="fas fa-badge-check text-lime-700"/>} />
       </Routes>
       </NoteState>
      

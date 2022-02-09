@@ -1,11 +1,24 @@
-import React from 'react';
-import { Link  , useLocation} from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { Link  , useLocation , useNavigate} from "react-router-dom";
 
 function Navbar() {
   let location = useLocation();
+  const nav = useNavigate();
+  const [userorlogin , setuserorlogin] = useState((<li className={`${location.pathname==='/Login'?'active':''}`} ><Link to="/Login">Login</Link></li>));
   React.useEffect(() => {
     console.log(location.pathname);
+    if(sessionStorage.name){
+      setuserorlogin(
+      <li className={`${location.pathname==='/Login'?'active':''}`} >
+        <Link to="#">Hi! {sessionStorage.getItem('name')}
+        <i title='LogOut' className="fad fa-sign-out-alt mx-1" onClick={async ()=>{ sessionStorage.removeItem('Token'); await sessionStorage.removeItem('name'); nav("/Login"); setuserorlogin((<li className={`${location.pathname==='/Login'?'active':''}`} ><Link to="/Login">Login</Link></li>));}}></i>
+        </Link>
+        </li>
+      )
+      }  
   }, [location]);
+ 
+ 
   return(
     <nav className='flex  justify-around content-center items-center self-center my-7'> 
       <ul className="navlist flex justify-around content-center h-14 items-center drop-shadow-xl backdrop-blur-xl rounded-lg ">
@@ -14,8 +27,7 @@ function Navbar() {
       </div> 
           <li className={`${location.pathname==='/'?'active':''}`} ><Link to="/" >Home</Link></li>
           <li  className={`${location.pathname==='/Viewpage'?'active':''}`}><Link to="/Viewpage">Your Notes</Link></li>
-          <li className={`${location.pathname==='/Login'?'active':''}`} ><Link to="/Login">Login</Link></li>
-          
+          {userorlogin}
       </ul>
     </nav>
   );

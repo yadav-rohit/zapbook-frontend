@@ -18,7 +18,8 @@ function Login() {
         console.log(json);
         if(json.success){
          //redirect and save auth token
-         localStorage.setItem('Token' , json.authtoken);
+         sessionStorage.setItem('Token' , json.authToken);
+         sessionStorage.setItem('name' , json.name);
          history("/viewpage");
         }
         else{

@@ -183,3 +183,6 @@ input[type=text]::placeholder , input[type=password]::placeholder , input[type=e
 * {
   box-sizing: border-box;
 }
+i{
+  background: none;
+}

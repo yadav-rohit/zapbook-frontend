@@ -3,10 +3,28 @@ import '../viewpage.css';
 // import Confirmation from './Confirmation';
 import Listview from './Listview';
 import noteContxt from '../context/notes/noteContxt';
+import Alert from './Alert';
+
 
 
 
 function Viewpage(props) {
+  if(sessionStorage.Token){
+    return ViewNotes(props);
+  }
+  else{
+    return Alerted();
+  }
+}
+
+export default Viewpage
+
+function Alerted() {
+  return (
+    <Alert type="fas fa-exclamation-triangle text-red-700" content="Make Sure To login in order to view you notes" footer="Login to view :" lnkname="Login Here" lnk="/Login"/>
+  )
+}
+function ViewNotes(props) {
   const context = useContext(noteContxt);
   let {addNote} = context;
   const [note , setNote] = useState({title:"" , description: "" , tag:""})
@@ -84,7 +102,7 @@ function Viewpage(props) {
   </>)
 }
 
-export default Viewpage;
+
 
 
 
