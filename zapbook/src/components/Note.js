@@ -34,7 +34,7 @@ function Note(props) {
 
   return (<>
     <Confirmation  visible={vss} title="Warning" content={`${props.title} have been deleted!`}/> 
-   <div className={`note flex flex-col drop-shadow-xl rounded-lg `} >
+   <div className={`note flex flex-col shadow-2xl rounded-lg `} >
        <div className="titles flex content-center justify-between drop-shadow-md text-lg font-bold my-2"><div className="flex"><p className='ttle' suppressContentEditableWarning={true} contentEditable={cont_edititability}  >{props.title}</p>      
         <div className={`tag mx-1 px-1 rounded-lg ${props.tag}`} suppressContentEditableWarning={true} contentEditable={cont_edititability}  >{props.tag}</div></div>
        <div className="choices flex"> <i className="far fa-trash-alt pr-2" onClick={() => {banners("Warn") ; setTimeout( function() {deletenote(props.id)} , 5000)}}></i><i className="far fa-edit pr-2" onClick={edit}></i><i className="far fa-share-square"></i></div></div>

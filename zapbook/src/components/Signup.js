@@ -17,6 +17,7 @@ function Login() {
             });
         const json = await response.json();
         console.log(json);
+        history("/Alertsignup");
     }
     else{
         alert('Password should be same');
@@ -32,16 +33,16 @@ function Login() {
     <h2 className="active"> Sign Up </h2>
 {/* 
     <!-- Icon --> */}
-    <div className="first">
+    <div className="first ">
     <i className="fas fa-user-circle text-8xl" id='icon'></i>
     </div>
     
     {/* <!-- Login Form --> */}
     <form onSubmit={handleSubmit}>
-      <input type="text" id="name"  name="name" value={credentials.name}  placeholder="Name" onChange={onChange}/>
-      <input type="email" id="id"  name="email" value={credentials.email}  placeholder="Email" onChange={onChange}/>
-      <input type="password" id="password"  value={credentials.password} name="password" placeholder="Password" onChange={onChange}/>
-      <input type="password" id="confirmpassword"   name="confirm-password" placeholder="Re-enter Password" />
+      <input type="text" id="name"   name="name" value={credentials.name}  placeholder="Name" onChange={onChange} required/>
+      <input type="email" id="id"  name="email" value={credentials.email}  placeholder="Email" onChange={onChange} required/>
+      <input type="password"  id="password"  value={credentials.password} name="password" placeholder="Password" onChange={onChange} minLength={5} required/>
+      <input type="password"  id="confirmpassword"   name="confirm-password" placeholder="Re-enter Password" minLength={5} required/>
       <button type="submit" >SignUp</button>
     </form>
 {/* 
