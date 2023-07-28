@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/zapbook-frontend/static/css/main.486b279b.css",
+    "main.js": "/zapbook-frontend/static/js/main.eebcb896.js",
+    "static/media/cloud.svg": "/zapbook-frontend/static/media/cloud.4ae0bde27d2721fcff8d284d8c2fa75d.svg",
+    "static/media/back.svg": "/zapbook-frontend/static/media/back.7fafd6afaf53d6ff4cc6.svg",
+    "index.html": "/zapbook-frontend/index.html",
+    "main.486b279b.css.map": "/zapbook-frontend/static/css/main.486b279b.css.map",
+    "main.eebcb896.js.map": "/zapbook-frontend/static/js/main.eebcb896.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.486b279b.css",
+    "static/js/main.eebcb896.js"
+  ]
+}
